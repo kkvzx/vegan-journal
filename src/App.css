@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* variables */
+:root {
+  --main-color: #f55a5a;
+  --font-color: white;
+  --secondary-fs: 10.24px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* position PageContainer in the centre of the page */
+.pagePositioningContainer {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(128, 128, 128, 0.195);
+}
+.pageContainer {
+  min-width: 550px;
+  width: 30%;
+  min-height: 704px;
+  height: 75%;
+  background: white;
+}
+
+/* NAVBAR STARTS THERE */
+.navbarContainer {
+  background: var(--main-color);
+  width: 100%;
+  height: 55px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.navbarContainer h2,
+.fa-solid {
+  color: var(--font-color);
+  margin: 5px;
+}
+.navbarContainer h2 {
+  font-weight: 400;
+  font-size: 14.5px;
+}
+.fa-solid {
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+/* HERO STARTS THERE */
+.heroContainer {
+  width: 100%;
+  height: calc(704px - 55px);
+  padding: 45px 40px 28px 40px;
+  box-sizing: border-box;
+  overflow: scroll;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroContainer::-webkit-scrollbar {
+  display: none;
+}
+.singlePiece {
+  width: 470px;
+  height: 168px;
+  display: flex;
+  margin-bottom: 36px;
+}
+.singlePiece img {
+  width: 125px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.textContainer {
+  width: calc(100% - 125px);
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  padding: 19px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.textContainer h3,
+.textContainer a,
+.textContainer h4,
+.textContainer p {
+  font-size: var(--secondary-fs);
+}
+.textContainer p {
+  font-weight: 400;
+}
+.textContainer h4 {
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.textContainer h2 {
+  font-size: 25px;
+  font-weight: 700;
+  height: 40px;
+}
+.textContainer h3 a {
+  color: #918e9b;
+  font-weight: 400;
+  margin-left: 12px;
 }
