@@ -8,6 +8,10 @@ export const WholePage = () => {
   const heroEl = data.map((item) => {
     return <Hero key={item.id} {...item} />;
   });
+  const singlePiece = document.querySelector(".singlePiece");
+  singlePiece?.addEventListener("click", () => {
+    console.log("Hi");
+  });
 
   return (
     <div className="pagePositioningContainer">
