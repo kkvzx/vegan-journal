@@ -3,6 +3,7 @@ import { item } from "./data";
 
 export const Hero = (item: item) => {
   let badge: any;
+  // CORRECT THIS TYPE ANY!!!!!!!!!!!
   if (item.rating >= 8) {
     badge = <div className="award fa-solid fa-trophy"></div>;
     console.log(badge);
