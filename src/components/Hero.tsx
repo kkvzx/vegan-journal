@@ -1,9 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 import { item } from "./data";
 
 export const Hero = (item: item) => {
-  let award: boolean;
-  item.rating >= 8 ? (award = true) : (award = false);
+  let badge: any;
+  if (item.rating >= 8) {
+    badge = <div className="award fa-solid fa-trophy"></div>;
+    console.log(badge);
+  }
 
   return (
     <div className="singlePiece">
@@ -14,9 +17,7 @@ export const Hero = (item: item) => {
           <a href={item.mapsLink} target="_blank">
             View on Google Maps
           </a>
-          <div className="award">
-            <i className="fa-solid fa-earth-europe"></i>
-          </div>
+          {badge}
         </h3>
         <h2>{item.title}</h2>
         <h4>

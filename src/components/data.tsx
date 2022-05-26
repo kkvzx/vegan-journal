@@ -27,7 +27,7 @@ export default [
     imageUrl: "http://molam.pl/wp-content/uploads/revslider/interior/foto1.jpg",
     pros: "asd",
     cons: "asd",
-    rating: 10,
+    rating: 9,
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ export default [
       "https://img.restaurantguru.com/c8a9-Restaurant-Mada-Poke-meals.jpg",
     pros: "asd",
     cons: "asd",
-    rating: 8,
+    rating: 6,
   },
   {
     id: 4,
@@ -73,5 +73,20 @@ export default [
     pros: "asd",
     cons: "asd",
     rating: 10,
+  },
+  {
+    id: 5,
+    title: "Mountain Fuji",
+    location: "Japan",
+    mapsLink: "https://www.google.com",
+    startDate: "26.01.2022",
+    endDate: "29.01.2022",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellat recusandae, aut praesentium temporibus similique inventore fuga et quos sunt nam hic at cum quo corporis corrupti unde suscipit? Nam doloribus nihil libero deserunt tempore veritatis itaque rem consectetur quam!",
+    imageUrl:
+      "https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    pros: "asd",
+    cons: "asd",
+    rating: 2,
   },
 ];
